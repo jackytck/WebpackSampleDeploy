@@ -44,6 +44,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/index.html'
     }),
+    // no need if 'webpack -p' is used
+    // new webpack.DefinePlugin({
+    //   'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+    // }),
     new DashboardPlugin()
   ]
 };
